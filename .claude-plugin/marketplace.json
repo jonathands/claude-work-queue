@@ -1,0 +1,12 @@
+{
+  "name": "claude-work-queue",
+  "owner": {
+    "name": "jonathands"
+  },
+  "plugins": [
+    {
+      "name": "work-queue",
+      "source": "./"
+    }
+  ]
+}

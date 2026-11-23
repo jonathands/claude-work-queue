@@ -1,0 +1,20 @@
+{
+  "name": "work-queue",
+  "version": "0.2.0",
+  "description": "A side pane showing a project's work queue from PLAN.md: status tabs, search, and click an item to copy it",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "planPath": {
+      "type": "string",
+      "title": "Plan file",
+      "description": "Absolute path of the Markdown file holding the queue. Empty: PLAN.md in the session's directory.",
+      "default": ""
+    },
+    "heading": {
+      "type": "string",
+      "title": "Queue heading",
+      "description": "The heading of the queue section in that file.",
+      "default": "## Work queue"
+    }
+  }
+}
