@@ -44,7 +44,7 @@ export function parseQueue(text: string, head = '## Work queue'): QueueLine[] {
       seenItem = true
     } else if (seenItem || /^[A-Z][a-z]+( [a-z(]|$)/.test(raw.trim()) && raw.trim().length < 80) {
       // A short plain line is a group; the long preamble before the first group is not.
-      if (raw.trim().length < 200) out.push({ kind: 'group', text: raw.trim() })
+      out.push({ kind: 'group', text: raw.trim() })
     }
   }
   return out
